@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<title>Clash Picker - MR GAMES</title>
+<link rel="stylesheet" href="style.css"/>
+<script src="script.js"></script>
+</head>
+<body onload="checkLoggedIn()">
+
+<div class="container">
+    <h1>Clash Picker</h1>
+    <p>Choose your game or strategy!</p>
+
+    <div class="game-grid">
+        <div class="game-card">
+            <iframe src="https://clashofclans.com/game" width="100%" height="150" frameborder="0"></iframe>
+            <p>Clash of Clans</p>
+        </div>
+        <div class="game-card">
+            <iframe src="https://clashroyale.com/game" width="100%" height="150" frameborder="0"></iframe>
+            <p>Clash Royale</p>
+        </div>
+    </div>
+</div>
+
+<div id="chat-toggle" onclick="toggleChat()">💬 Chat</div>
+</body>
+</html>
