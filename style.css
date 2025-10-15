@@ -1,0 +1,113 @@
+/* === General Styles === */
+body, html {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: linear-gradient(to right, #0f2027, #203a43, #2c5364);
+  color: #00ffff;
+  overflow-x: hidden;
+}
+
+.container {
+  text-align: center;
+  padding: 60px 20px;
+  max-width: 900px;
+  margin: auto;
+  background-color: rgba(0, 0, 0, 0.7);
+  border-radius: 12px;
+  box-shadow: 0 6px 24px rgba(0,0,0,0.3);
+  animation: fadeIn 1.5s ease-out forwards;
+  opacity: 0;
+}
+
+@keyframes fadeIn { to { opacity: 1; } }
+
+h1 {
+  font-size: 3rem;
+  color: #f0db4f;
+  text-shadow: 0 0 10px #f0db4f, 0 0 20px #f0db4f;
+  margin-bottom: 20px;
+}
+
+p { font-size: 1.2rem; }
+
+button {
+  background: #00ffff;
+  color: #0f2027;
+  border: none;
+  border-radius: 8px;
+  padding: 10px 20px;
+  font-weight: bold;
+  cursor: pointer;
+  box-shadow: 0 0 12px #00ffff;
+  transition: 0.3s;
+}
+
+button:hover { box-shadow: 0 0 20px #00ffff; }
+
+input, select {
+  width: 80%;
+  padding: 10px;
+  margin: 10px 0;
+  border-radius: 8px;
+  border: 2px solid #00ffff;
+  background: #000;
+  color: #00ffff;
+  font-size: 1rem;
+}
+
+.game-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.game-card {
+  background: rgba(0,0,0,0.5);
+  border-radius: 12px;
+  padding: 10px;
+  width: 250px;
+  box-shadow: 0 0 10px #00ffff;
+  text-align: center;
+}
+
+.game-card iframe {
+  border-radius: 8px;
+}
+
+.inline-row { display: flex; gap: 10px; justify-content: center; align-items: center; flex-wrap: wrap; }
+
+.key-display {
+  min-width: 140px;
+  text-align: center;
+  padding: 10px;
+  border-radius: 8px;
+  border: 2px solid rgba(0,255,255,0.2);
+  background: rgba(0,0,0,0.6);
+  color: #00ffff;
+  font-weight: bold;
+}
+
+.muted { color: rgba(0,255,255,0.8); font-size: 0.95rem; margin-top: 5px; }
+
+#chat-toggle {
+  position: fixed;
+  bottom: 20px;
+  left: 20px;
+  background-color: #0078D7;
+  color: white;
+  padding: 10px 15px;
+  border-radius: 20px;
+  cursor: pointer;
+  z-index: 1000;
+  font-family: sans-serif;
+  box-shadow: 0 0 10px #0078D7;
+  user-select: none;
+}
+
+.rain-wrapper { pointer-events: none; position: fixed; top:0; left:0; width:100vw; height:100vh; z-index:5; }
+.raindrop { position:absolute; top:-20px; width:2px; background: linear-gradient(180deg,#00ffff,#0077aa); border-radius:50%/40%; opacity:0.6; animation-name:fall; animation-timing-function:linear; animation-iteration-count:infinite;}
+@keyframes fall { to { transform: translateY(110vh); opacity:0; } }
