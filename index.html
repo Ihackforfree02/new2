@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<title>MR GAMES</title>
+<link rel="stylesheet" href="style.css"/>
+<script src="script.js"></script>
+</head>
+<body onload="checkLoggedIn()">
+
+<div id="menu-toggle" onclick="toggleMenu()">☰</div>
+<div class="side-menu">
+    <a href="#" onclick="toggleChat()">💬 Chat</a>
+    <a href="sign_up.html">Useful Links</a>
+    <a href="index.html">BETA Games</a>
+    <a href="Clash.html">Clash Picker</a>
+    <a href="https://ihackforfree02.github.io/hollownight-sigma/">Hollow Knight Map</a>
+    <a href="https://ihackforfree02.github.io/games/">GBA Games</a>
+</div>
+
+<div class="container">
+    <h1>MR GAMES</h1>
+    <p class="subtitle">Play free unblocked games!</p>
+
+    <div class="game-grid">
+        <!-- Example games -->
+        <div class="game-card">
+            <iframe src="https://www.roblox.com/games/1818" width="100%" height="150" frameborder="0"></iframe>
+            <p>Roblox Game</p>
+        </div>
+        <div class="game-card">
+            <iframe src="https://www.crazygames.com/game/1" width="100%" height="150" frameborder="0"></iframe>
+            <p>Crazy Game</p>
+        </div>
+        <div class="game-card">
+            <iframe src="https://www.miniclip.com/games/en/" width="100%" height="150" frameborder="0"></iframe>
+            <p>Miniclip</p>
+        </div>
+    </div>
+</div>
+
+<div id="chat-toggle" onclick="toggleChat()">💬 Chat</div>
+
+</body>
+</html>
