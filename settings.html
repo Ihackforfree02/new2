@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<title>Settings - MR GAMES</title>
+<link rel="stylesheet" href="style.css"/>
+<script src="cloak_panic.js"></script>
+</head>
+<body onload="checkLoggedIn()">
+
+<div class="container">
+    <h1>Settings</h1>
+
+    <label for="cloakSelect">Tab Cloak</label>
+    <select id="cloakSelect">
+      <option value="">None</option>
+      <option value="classroom">Google Classroom</option>
+      <option value="gmail">Gmail</option>
+      <option value="docs">Google Docs</option>
+      <option value="slides">Google Slides</option>
+    </select>
+
+    <label>Panic URL</label>
+    <input type="url" id="panicUrl" placeholder="https://example.com"/>
+
+    <label>Panic Key</label>
+    <div class="inline-row">
+      <div id="keyDisplay" class="key-display">Not set</div>
+      <button id="setKeyBtn">Set Panic Key</button>
+      <button id="clearKeyBtn">Clear Key</button>
+    </div>
+
+    <button id="saveBtn">Save Settings</button>
+    <button id="testPanicBtn">Test Panic</button>
+</div>
+
+<div id="chat-toggle" onclick="toggleChat()">💬 Chat</div>
+</body>
+</html>
